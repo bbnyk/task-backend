@@ -1,0 +1,18 @@
+### 1. ทดสอบสร้างงาน
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+### 2. ทดสอบดึงข้อมูล (ก๊อปปี้ _id จากตรงนี้)
+GET http://localhost:3000/tasks
+
+### 3. ทดสอบแก้ไข (เอา _id มาต่อท้าย URL)
+PUT http://localhost:3000/tasks/6ac92a20170b2d8a9bb5f163
+
+### 4. ทดสอบลบ (เอา _id มาต่อท้าย URL)
+DELETE http://localhost:3000/tasks/6ac929f8170b2d8a9bb5f162
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhY2Y5YzFlZDE5ZWI0YzQ2ODU0NGNkZCIsImlhdCI6MTc5MTk5MDg3NCwiZXhwIjoxNzkxOTk0NDc0fQ.jkEfG8kVX5szYZw8rLfMuMKSTsXdbQcBEeCarW9DEWw
